@@ -3,13 +3,14 @@ var questionsAndAnswers = {
     "What was Edward's first girlfriend called": 'chelsea',
     "Who was the heaviest baby when they were born (James, Charles, Sarah or Edward)": "edward",
     'Who is the heaviest NOW (James, Charles, Sarah or Edward)': 'james',
+    "Who is this <br><img src='./images/baby-s.JPG' />": 'sarah',
     'Who was the naughtiest as a child (James, Charles, Sarah or Edward)': 'charles',
     'Who was the naughtiest as a teenager (James, Charles, Sarah or Edward)': 'sarah',
+    "Which grandchild is this <br><img src='./images/william.jpg' />": 'william',
+    "And this grandchild <br><img src='./images/matthew.jpg' />": 'matthew',
     "What was Sarah's favourite subject at secondary school": 'music',
     "What was James' favourite subject at secondary school – maths, science, english or PE?": 'science',
-    "Who is this <br><img src='./images/baby-s.JPG' />": 'sarah',
     "Who was Charles' best friend growing up (first and last name)" : 'ed moore',
-    "James' best friend": 'nick moore',
     "Sarah's childhood best friend" : 'katie hall',
     "And Edward's childhood best friend?": "ben spurr",
     'And finally, who is your favourite child?': 'sarah'
@@ -43,6 +44,7 @@ function correctAnswer(){
 
 function displayResults(result) {
     if (questionCount == questions.length) {
+        document.getElementById('questionArea').style.display = 'none';
         finalScore();
     }
     const resultDisplay = document.getElementById('result');
