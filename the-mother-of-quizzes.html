@@ -1,0 +1,68 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The Mother of all quizzes</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <style type="text/css">
+  	body {
+  		margin: auto;
+		width: 50%;
+  		padding: 10px;
+  	}
+    
+    img {
+        width: 70%;
+    }
+
+    #final-score {
+        display: none;
+    }
+
+    body {
+        background-image: url('./images/mb-kids.png');
+        background-size: cover;
+    }
+
+    #mainArea {
+        background-color: #f5f5f5a3;
+        border-radius: 5px;
+        margin: 25px;
+        padding: 16px;
+    }
+
+    #result {
+        font-weight: bold;
+    }
+
+    p {
+        font-size: large;
+    }
+
+  </style>
+</head>
+
+<body>
+    <div id="mainArea">
+        <h1>The Mother of All Quizzes</h1>
+        <p>Time to find out what kind of mother you really are…</p>
+        <br />
+        <div id="questionArea">
+            <h2>Question <span id="questionCount">1</span></h2>
+            <p id="question"></p>
+            <input type="text" id="answer" name="answer"><br><br>
+            <button class="btn btn-success" id="yesButton" onclick="checkAnswer(); askQuestion()">Submit</button>
+        </div>
+        <br><br>
+        <p id='result'></p>
+    <h2 id='final-score'></h2>
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
